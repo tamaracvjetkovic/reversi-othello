@@ -54,8 +54,7 @@ def heuristicEvaluation(player, table):
                         else:
                             opp_front_tiles += 1
                         break
-  
-    
+      
     if (my_tiles > opp_tiles):
         p = (100.0 * my_tiles) / (my_tiles + opp_tiles)
     elif (my_tiles < opp_tiles):

@@ -3,7 +3,7 @@ global oki77
 global oki07
 global oki70
 
-   
+
 def validMoves2(cur, opp, table, m2):
     global oki00, oki77, oki07, oki70
     oki00 = 0
@@ -23,8 +23,7 @@ def validMoves2(cur, opp, table, m2):
     if (len(corners) != 0):
         return corners
     else:
-        return valids
-    
+        return valids  
     
 def validMoves(cur, opp, table):
     global oki00, oki77, oki07, oki70
@@ -73,7 +72,6 @@ def validMoves(cur, opp, table):
                                 break                                       
     return valids
 
-
 def makeMove(color, table, starty, startx, count, black, white):
     table[starty][startx] = color
     if (count is True):
@@ -121,8 +119,7 @@ def makeMove(color, table, starty, startx, count, black, white):
             continue
         continue
     if (count is True):
-        return black, white
-      
+        return black, white 
       
 def numValidMoves(cur, opp, table):
     return (len(validMoves(cur, opp, table)))

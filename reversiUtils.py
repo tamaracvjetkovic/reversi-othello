@@ -1,5 +1,4 @@
 from copy import copy, deepcopy
-import time
 
 def copyTable(table):
     copyTable = deepcopy(table)

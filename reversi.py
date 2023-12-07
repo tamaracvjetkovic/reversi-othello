@@ -3,12 +3,7 @@ SV48-2022, Tamara Cvjetkovic
 cvjetkovic.sv48.2022@uns.ac.rs
 '''
 
-from tree import TreeNode, Tree
 from datetime import datetime
-from copy import copy, deepcopy
-
-import copy
-import time
 
 from reversiMakingMoves import validMoves, validMoves2, makeMove, numValidMoves
 from reversiUtils import copyTable, showResult, showTable, showTableAndValidsPlayer
@@ -62,11 +57,9 @@ def playReversi(player, table):
         if (len(validsPlayer) == 0):
             print("\n\nNEMATE TRENUTNO SLOBODNIH POTEZA!\n\n")
             pass
-        #print(validsComputer)
         if (len(validsComputer) != 0):
             print("\n\n\nKompjuter igra....")
             # kompjuter igra potez
-            #print(validsComputer)
             compMove = computersMove(player, table, validsComputer, black, white)
             (y, x) = compMove
             b, w = makeMove(opp, table, y, x, True, black, white) 

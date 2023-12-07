@@ -2,10 +2,9 @@ import time
 import sys
 
 
-from reversiMakingMoves import validMoves, validMoves2, makeMove, numValidMoves
-from reversiUtils import copyTable, showResult, showTable, showTableAndValidsPlayer
+from reversiMakingMoves import validMoves2, makeMove, numValidMoves
+from reversiUtils import copyTable 
 from reversiHeuristic import heuristicEvaluation
-
 
 global stateValues
 stateValues = {}
@@ -18,8 +17,6 @@ def computersMove(player, table2, validsComputer, black, white):
     computer = 2
     if player == 2:
         computer = 1
-    #depth = 5       
-    #print(validsComputer)
     if (len(validsComputer) == 0):
             maxTimePerMove = 0
     else:
@@ -37,13 +34,11 @@ def computersMove(player, table2, validsComputer, black, white):
             bestScore = score
             bestMove = move
     #print(bestScore)
-    #print(maxdepth)
     return bestMove
 
 
 
 def minimax(player, table, alfa, beta, maxPlayer, startTime, timeLimit, depth, black, white):
-    #print(depth)
     computer = 2
     if player == 2:
         computer = 1 
