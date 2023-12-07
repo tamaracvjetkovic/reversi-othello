@@ -1,5 +1,3 @@
-
-
 global oki00
 global oki77
 global oki07

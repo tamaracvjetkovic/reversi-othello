@@ -1,4 +1,3 @@
-
 from reversiMakingMoves import validMoves, makeMove, numValidMoves
 from reversiUtils import copyTable, showResult, showTable, showTableAndValidsPlayer
    

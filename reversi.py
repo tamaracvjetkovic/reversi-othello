@@ -1,4 +1,3 @@
-
 '''
 SV48-2022, Tamara Cvjetkovic
 cvjetkovic.sv48.2022@uns.ac.rs
@@ -16,15 +15,10 @@ from reversiUtils import copyTable, showResult, showTable, showTableAndValidsPla
 from reversiHeuristic import heuristicEvaluation
 from reversiMinimax import minimax, computersMove
 
-
 global black, white
 black = 2
 white = 2
-
-
-
-
-                
+              
 
 def playReversi(player, table):
     global black, white
@@ -134,9 +128,7 @@ if __name__ == '__main__':
              [0,  0,  0,  0,  0,  0,  0,  0],
              [0,  0,  0,  0,  0,  0,  0,  0],
              [0,  0,  0,  0,  0,  0,  0,  0]]
-             
-    #print(heuristicEvaluation(1, table))           
-     
+                  
     while (True):
         print("Izaberite boju: ")
         print("1. crni - ⚫")
@@ -157,14 +149,8 @@ if __name__ == '__main__':
             continue
         
         
-        
-        
-        
-
-        
-        
+                    
 '''
-
 for i in range(1, 9):
     for j in range(1, 9):
         print(table[i][j], end = "  ")
@@ -191,6 +177,5 @@ for i in range(1, 9):
         else:
             print(valids[i * 10 + j], end = " ") 
     print("")
-print()             
-        
+print()                 
 '''
