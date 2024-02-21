@@ -42,7 +42,7 @@ A console application in Python for the classic game Reversi (Othello), featurin
 # Functionalities:
 After choosing your color, you play versus the computer by selecting the number of the cell where you want to put your piece/disk. The color does not change who goes first, but is only an implemented detail. The player always plays first.
 
-* NOTE: since this is a console application and it prints symbols, the visual design will vary depending on which OS you run it on. The project was done in Visual Studio Code on Windows, so the table looks clean, if you run it from there, but it will probably break on any other OS.
+* NOTE: since this is a console application and it prints symbols, the visual design will vary depending on which OS you run it on. The project was done in Visual Studio Code on Windows, so the table will look clean if you run it from there, but it will probably break or look uneven on any other OS.
 #
 
 
